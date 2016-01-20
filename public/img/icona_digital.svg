@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="117px" height="147px"
+	 viewBox="0 0 117 147" enable-background="new 0 0 117 147" xml:space="preserve">
+
+	<g i:extraneous="self">
+		<rect fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="110" height="140" x="2" y="2" rx="20" ry="20"/>
+		<path stroke="#000000" stroke-width="3.7976" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M48.853,28.83h27.62c7.862,0.131,7.295,7.342,7.295,7.342v41.029H86.3v0.963L77.66,78.17l-0.005-0.969h2.481V47.464H48.853h0.058
+			H26.772l-0.006,29.737h2.512v0.963h-8.576L20.7,77.206h2.537l0.009-41.052c0,0-0.59-7.194,7.272-7.325h18.393"/>
+		<rect x="28.939" y="42.015" fill="#FFFFFF" width="49.566" height="2.393"/>
+		<path fill="#FFFFFF" d="M71.727,33.606c0,1.35-1.094,2.444-2.444,2.444l0,0c-1.35,0-2.444-1.094-2.444-2.444l0,0
+			c0-1.35,1.094-2.444,2.444-2.444l0,0C70.633,31.163,71.727,32.257,71.727,33.606L71.727,33.606z"/>
+		<path fill="#FFFFFF" d="M78.875,33.606c0,1.35-1.094,2.444-2.444,2.444l0,0c-1.35,0-2.444-1.094-2.444-2.444l0,0
+			c0-1.35,1.094-2.444,2.444-2.444l0,0C77.781,31.163,78.875,32.257,78.875,33.606L78.875,33.606z"/>
+		<g>
+			
+				<path fill="#FFFFFF" stroke="#000000" stroke-width="3.7976" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M73.533,41.611c0.004,0.021,0,19.949,0,19.949L63.476,71.598l-29.463,0.016V41.562L73.533,41.611z"/>
+			
+				<polygon fill="none" stroke="#000000" stroke-width="3.7976" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				73.554,61.544 63.493,61.544 63.493,71.584 			"/>
+		</g>
+		<text x="20" y="103" font-weight="bold" fill="black">Impressió</text>
+		<text x="30" y="123" font-weight="bold" fill="black">digital</text>
+	</g>
+
+
+</svg>

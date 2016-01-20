@@ -1,0 +1,37 @@
+header {
+    margin-top: 20px;
+}
+
+
+.titol {
+    margin-bottom:25px;
+    font-family: 'Bitter', serif;
+    font-weight: 900;
+}
+.titol h1 {
+    padding-bottom: 15px;
+}
+.titol h1 span {
+    background-color: black;
+    padding: 0 5px 0 5px;
+}
+
+.quadre {
+    margin-right: 200px;
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    padding: 15px;
+    margin:5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5em;
+    
+}
+
+.quadre i {
+   font-size: xx-large;
+    margin-right: 15px;
+    vertical-align: middle ;
+    
+}
