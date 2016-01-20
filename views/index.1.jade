@@ -44,7 +44,51 @@ block navbar
           li
             a(href='#') sobre nosaltres
             
-
+block carousel
+  #myCarousel.carousel.slide(data-ride='carousel')
+    // Indicators
+    
+    // Wrapper for slides
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='img/foto-6.jpg', alt='Chania')
+        .carousel-caption
+          .titol
+            h1
+              span L'excel·lència
+            h1
+              span en la impressió
+            h1
+              span flexible
+          p.negre
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-facebook.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-twitter.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-instagram.fa-stack-1x.fa-inverse
+            span.quadre
+              i.fa.fa-phone
+              | contactar
+          .rowy-fluid.footer
+            h1 Valors que ens fan grans
+            .col-xs-2.col-xs-offset-1 Compromís
+            .col-xs-2 Experiència
+            .col-xs-2 Qualitat
+            .col-xs-2 Innovació
+            .col-xs-2 Eficiència
+            
+    // Left and right controls
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only Next
+            
 block content
   .container
     .row
