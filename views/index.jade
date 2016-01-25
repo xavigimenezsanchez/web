@@ -1,7 +1,7 @@
 extends layout
 
 block header
-  header
+  header.container-fluid
     .row
       .col-xs-1.col-xs-offset-1
         img(src='img/EnplaterLogo.png', width='150')
@@ -19,39 +19,99 @@ block header
         img(src='img/EPALogo.png', width='120')
 
 block navbar
-  nav#menuPrincipal.navbar.navbar-centered.navbar-default
-    .container-fluid
-      .navbar-header
-        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav.navbar-nav
-          li.active
-            a(href='#')
-              | inici 
-              span.sr-only (current)
-          li
-            a(href='#') tecnologia
-          li
-            a(href='#') mercat
-          li
-            a(href='#') innovació
-          li
-            a(href='#') contacte
-          li
-            a(href='#') sobre nosaltres
+  #menuPrincipal.container-fluid
+    nav.navbar.navbar-centered.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#')
+                | inici 
+                span.sr-only (current)
+            li
+              a(href='#') tecnologia
+            li
+              a(href='#') mercat
+            li
+              a(href='#') innovació
+            li
+              a(href='#') contacte
+            li
+              a(href='#') sobre nosaltres
             
-
+block carousel
+  .container-fluid.mainHeader
+    .row.principal
+      .col-xs-4.col-xs-offset-4.text-center
+        h1
+          span L'excel·lència
+        h1
+          span en la impressió
+        h1
+          span flexible
+    .row
+      .col-xs-4.col-xs-offset-8
+        span.quadre
+          i.fa.fa-phone
+          | contactar
+    .row.footer
+      h1 Valors que ens fan grans
+      .col-xs-2.col-xs-offset-1
+        .quadre2 
+          div Compromís
+      .col-xs-2
+        .quadre2
+          div Experiència
+      .col-xs-2
+        .quadre2 
+          div Qualitat
+      .col-xs-2
+        .quadre2 
+          div Innovació
+      .col-xs-2
+        .quadre2 
+          div Eficiència
+    
 block content
   .container
     .row
       .col-xs-8.col-xs-offset-2
-        h1 Tecnologia
-        h2 Sistemes d'impressió
+        h1.text-center.big.message1 Tecnologia
+        h2.text-center.enplaterColor.middle Sistemes d'impressió
         
-        p Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
-        p Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+    .row
+      .col-xs-2.col-xs-offset-4
+        img(src='img/icona_gravat_al_buit.svg', width='100%')
+      .col-xs-2
+        img(src='img/icona_digital.svg', width='100%')
+  .separador
+    
+  .container
+    .row
+      .col-xs-8.col-xs-offset-2
+        h1.text-center.big.message2 Sobre nosaltres
+        h2.text-center.enplaterColor.middle Objectiu: Excel·lència
+        
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+
+  .separador
+      
+  .container
+    .row
+      .col-xs-8.col-xs-offset-2
+        h1.text-center.big.message2 Sobre nosaltres
+        h2.text-center.enplaterColor.middle Objectiu: Excel·lència
+        
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.        
   
+  footer

@@ -1,8 +1,27 @@
+
 header {
     margin-top: 20px;
+    background-color: white;
+    margin: 0;
+    padding-top:25px;
 }
 
-
+#menuPrincipal {
+    background-color: white;
+}
+/*
+body.vegas-container>.vegas-slide {
+    top:150px;
+}
+*/
+.principal {
+    margin-top: 100px;
+}
+.principal h1 span {
+    background-color: black;
+    color: white;
+    /*font-weight: 900;*/
+}
 .titol {
     margin-bottom:25px;
     font-family: 'Bitter', serif;
@@ -34,4 +53,139 @@ header {
     margin-right: 15px;
     vertical-align: middle ;
     
+}
+
+.quadre2 {
+    border-radius: 10px;
+    border: 4px solid white;
+    text-align: center;
+    margin: 50px 0;
+    vertical-align:middle;
+}
+.quadre2 > div {
+    font-family: "Bitter";
+    font-weight: bold;
+}
+
+.mainHeader .footer {
+    margin-top: 75px;
+    background-color: #84754e;
+    opacity: 0.8;
+    color: white !important;
+}
+
+.mainHeader .footer h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+.big {
+    font-size: 7em;
+}
+.middle {
+    font-size: 5em;
+}
+
+.enplaterColor {
+    color: #84754e;
+}
+
+.enplaterText {
+    font-size:2em;
+}
+
+.separador {
+    height: 250px;
+    background: url('/img/foto-8.jpg');
+}
+
+.message1:after {
+    content: "Sempre a la última tecnologia";
+    display: block;
+    border: 4px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 0.3em;
+    padding-top: 50px;
+    position: absolute;
+    right: -250px;
+    font-weight: 900;
+    border-radius: 10px 10px 10px 0;
+}
+
+.message2:after {
+    content: "Més de 50 anys d'experiència";
+    display: block;
+    border: 4px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 0.28em;
+    padding-top: 50px;
+    position: absolute;
+    right: -250px;
+    font-weight: 900;
+    border-radius: 10px 10px 10px 0;
+}
+
+footer {
+    background-color: #84754e;
+    height: 350px;
+}
+
+
+@media (min-width: 1200px) {
+    .quadre2 {
+        border: 4px solid white;
+        width: 180px;
+        height: 180px;
+        text-align: center;
+        margin: 50px 0;
+        vertical-align: middle;
+    }
+    .quadre2 > div {
+         margin-top: 70px;
+        font-size: 20px;
+        font-family: "Bitter";
+        font-weight: bold;
+    }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .menu-lite a {
+        font-size: 8px;
+    }
+    .menu-lite li {
+        padding: 0 5px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .quadre2 {
+        border: 4px solid white;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        margin: 50px 0;
+        vertical-align: middle;
+    }
+    .quadre2 > div {
+        margin-top: 46px;
+        font-size: 15px;
+        font-family: "Bitter";
+        font-weight: bold;
+    }
+
+  
+}
+
+@media (max-width: 767px) {
+    .menu-lite a {
+        font-size: 8px;
+    }
+    
+    .menu-lite li {
+        padding: 0 5px;
+    }
 }
