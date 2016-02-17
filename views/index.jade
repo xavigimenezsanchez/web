@@ -3,9 +3,7 @@ extends layout
 block header
   header.container-fluid
     .row
-      .col-xs-1.col-xs-offset-1
-        img(src='img/EnplaterLogo.png', width='150')
-      .col-xs-2.col-xs-offset-3.text-center
+      .col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.text-center
         ul.menu-lite
           li.active
             a(href='#') CAT
@@ -15,8 +13,6 @@ block header
             a(href='#') FR
           li
             a(href='#') EN
-      .col-xs-2.col-xs-offset-3
-        img(src='img/EPALogo.png', width='120')
 
 block navbar
   #menuPrincipal.container-fluid
@@ -29,75 +25,85 @@ block navbar
             span.icon-bar
             span.icon-bar
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav
+          ul.nav.navbar-nav#nav-scroll
             li.active
-              a(href='#')
+              a(href='#inici')
                 | inici 
                 span.sr-only (current)
             li
-              a(href='#') tecnologia
+              a(href='#tecnologia') tecnologia
             li
-              a(href='#') mercat
+              a(href='#mercat') mercat
             li
-              a(href='#') innovació
+              a(href='#innovacio') innovació
             li
-              a(href='#') contacte
+              a(href='#contacte') contacte
             li
-              a(href='#') sobre nosaltres
+              a(href='#sobreNosaltres') sobre nosaltres
             
 block carousel
-  .container-fluid.mainHeader
+  .container-fluid.mainHeader#inici
     .row.principal
-      .col-xs-4.col-xs-offset-4.text-center
-        h1
+      .col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-4.text-center
+        h2
           span L'excel·lència
-        h1
+        h2
           span en la impressió
-        h1
+        h2
           span flexible
     .row
-      .col-xs-4.col-xs-offset-8
+      .col-xs-6.col-xs-offset-6.col-sm-4.col-sm-offset-8
         span.quadre
           i.fa.fa-phone
           | contactar
     .row.footer
-      h1 Valors que ens fan grans
-      .col-xs-2.col-xs-offset-1
-        .quadre2 
-          div Compromís
-      .col-xs-2
-        .quadre2
-          div Experiència
-      .col-xs-2
-        .quadre2 
-          div Qualitat
-      .col-xs-2
-        .quadre2 
-          div Innovació
-      .col-xs-2
-        .quadre2 
-          div Eficiència
+        h1.text-center Valors que ens fan grans
+        .valorsGran
+          .col-xs-2.col-xs-offset-1
+            .quadre2 
+              div Compromís
+          .col-xs-2
+            .quadre2
+              div Experiència
+          .col-xs-2
+            .quadre2 
+              div Qualitat
+          .col-xs-2
+            .quadre2 
+              div Innovació
+          .col-xs-2
+            .quadre2 
+              div Eficiència
+        .valorsPetit
+          .col-xs-12
+            ul.text-center
+              li Compromís
+              li Experiència
+              li Qualitat
+              li Eficiència
     
 block content
-  .container
+  .container#tecnologia
     .row
-      .col-xs-8.col-xs-offset-2
+      .col-xs-12.col-sm-8.col-sm-offset-2
         h1.text-center.big.message1 Tecnologia
         h2.text-center.enplaterColor.middle Sistemes d'impressió
         
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
     .row
-      .col-xs-2.col-xs-offset-4
+      .col-xs-4.col-xs-offset-2.col-sm-2.col-sm-offset-4
+      
         img(src='img/icona_gravat_al_buit.svg', width='100%')
-      .col-xs-2
+      .col-xs-4.col-sm-2
         img(src='img/icona_digital.svg', width='100%')
+        
   .separador
     
-  .container
+  .container#mercat
     .row
-      .col-xs-8.col-xs-offset-2
-        h1.text-center.big.message2 Sobre nosaltres
+      .col-xs-12.col-sm-8.col-sm-offset-2
+        h1.text-center.big.message2 Mercat
         h2.text-center.enplaterColor.middle Objectiu: Excel·lència
         
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
@@ -105,9 +111,31 @@ block content
 
   .separador
       
-  .container
+  .container#innovacio
     .row
-      .col-xs-8.col-xs-offset-2
+      .col-xs-12.col-sm-8.col-sm-offset-2
+        h1.text-center.big.message2 Innovació
+        h2.text-center.enplaterColor.middle Objectiu: Excel·lència
+        
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.        
+
+  .separador        
+
+  .container#contacte
+    .row
+      .col-xs-12.col-sm-8.col-sm-offset-2
+        h1.text-center.big.message2 Conctacte
+        h2.text-center.enplaterColor.middle Objectiu: Excel·lència
+        
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
+        p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.          
+
+  .separador
+  
+  .container#sobreNosaltres
+    .row
+      .col-xs-12.col-sm-8.col-sm-offset-2
         h1.text-center.big.message2 Sobre nosaltres
         h2.text-center.enplaterColor.middle Objectiu: Excel·lència
         
