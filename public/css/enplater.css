@@ -1,8 +1,15 @@
+/* Remove dot line in firefox */
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
+
 .fixe {
     position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 9999;
+    margin: 0 !important;
+    background: white;
 }
 header {
     margin-top: 20px;
@@ -11,8 +18,16 @@ header {
     padding-top:25px;
 }
 
+#map1, #map2 {
+    height: 450px;
+}
 #menuPrincipal {
     background-color: white;
+    letter-spacing: 2px;
+}
+
+#languages {
+    margin-bottom: 4em;
 }
 
 #inici {
@@ -21,9 +36,15 @@ header {
 .principal {
     margin-top: 100px;
 }
+
+.principal h2 {
+    line-height: 0.8 !important;
+}
 .principal h2 span {
     background-color: black;
     color: white;
+    padding-left: 15px;
+    padding-right: 15px;
     /*font-weight: 900;
     font-size: 0.8em;*/
 }
@@ -45,12 +66,19 @@ header {
     background-color: white;
     color: #000000;
     font-weight: bold;
-    padding: 15px;
-    margin:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    margin: 5px;
+    padding-top: 3px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 9px;
     font-size: 1.4em;
-    
+    font-family: Bitter;
+}
+
+#contactarButton {
+    margin-top: 4em;
 }
 
 .quadre i {
@@ -65,7 +93,7 @@ header {
 }
 
 .quadre2 {
-    border-radius: 10px;
+    border-radius: 25px;
     border: 4px solid white;
     text-align: center;
     margin: 50px 0;
@@ -81,19 +109,28 @@ header {
     background-color: #84754e;
     opacity: 0.8;
     color: white !important;
+          position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
 
 .mainHeader .footer h1 {
     font-weight: 900;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .big {
-    font-size: 5.5em;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 1em;
 }
 .middle {
-    font-size: 4.5em;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top:0;
+    margin-bottom: 0.5em;
 }
 
 .enplaterColor {
@@ -101,12 +138,13 @@ header {
 }
 
 .enplaterText {
-    font-size:1.5em;
+    font-size:1.2em;
 }
 
 .separador {
     height: 250px;
     background: url('/img/foto-8.jpg');
+        margin-top: 3em;
 }
 
 
@@ -114,6 +152,7 @@ header {
 footer {
     background-color: #84754e;
     height: 350px;
+  
 }
 
 
@@ -127,10 +166,11 @@ footer {
         vertical-align: middle;
     }
     .quadre2 > div {
-         margin-top: 50px;
-        font-size: 20px;
-        font-family: "Bitter";
+        margin-top: 50px;
+        font-size: 1.6em;
+        font-family: "Gudea";
         font-weight: bold;
+        letter-spacing: 0.05em;
     }
     .menu-lite:before {
         content:url('../img/EnplaterLogo80.png');
@@ -149,18 +189,23 @@ footer {
         top: 0;
     }
     .message1:after {
-        content: "Sempre a la última tecnologia";
+        content: "Més de 50 anys d'experiència";
         display: block;
-        border: 4px solid black;
+        border: 5px solid black;
         height: 150px;
         width: 150px;
-        font-size: 0.2em;
-        padding-top: 50px;
+        font-size: 0.3em;
+        padding-top: 29px;
+        padding-left: 1px;
+        padding-right: 1px;
         position: absolute;
-        right: -160px;
-        font-weight: 900;
-        border-radius: 10px 10px 10px 0;
-        top: 50px;
+        right: -94px;
+        /* font-weight: 900; */
+        border-radius: 20px 20px 20px 0;
+        top: 78px;
+        font-weight: bold;
+        font-family: "Bitter";
+        line-height: 1.4em;
     }
     
     .message2:after {

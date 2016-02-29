@@ -16,6 +16,11 @@
  *   scrollSpeed: 750
  * });
  */
+ 
+ // Xavi giménez //
+ /* Add this.options.offset to the next lines: 133 and 203
+ /*
+ /**/
 
 ;(function($, window, document, undefined){
 
@@ -42,6 +47,7 @@
 			filter: '',
 			scrollSpeed: 750,
 			scrollThreshold: 0.5,
+			offset: 0,
 			begin: false,
 			end: false,
 			scrollChange: false
@@ -119,7 +125,7 @@
 				$target = $('#' + linkHref);
 
 				if($target.length) {
-					topPos = $target.offset().top;
+					topPos = $target.offset().top + 200;
 					self.sections[linkHref] = Math.round(topPos);
 				}
 			});
@@ -130,7 +136,7 @@
 			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
 
 			for(var section in this.sections) {
-				if((this.sections[section] - windowHeight) < windowPos) {
+				if((this.sections[section] - windowHeight - this.options.offset) < windowPos) {
 					returnValue = section;
 				}
 			}
@@ -199,7 +205,7 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
+			var offset = $(target).offset().top - this.options.offset;
 
 			$('html, body').animate({
 				scrollTop: offset

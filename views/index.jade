@@ -1,7 +1,7 @@
 extends layout
 
 block header
-  header.container-fluid
+  header.container-fluid#languages
     .row
       .col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.text-center
         ul.menu-lite
@@ -52,35 +52,35 @@ block carousel
         h2
           span flexible
     .row
-      .col-xs-6.col-xs-offset-6.col-sm-4.col-sm-offset-8
+      .col-xs-12.text-center#contactarButton
         span.quadre
-          i.fa.fa-phone
           | contactar
-    .row.footer
-        h1.text-center Valors que ens fan grans
-        .valorsGran
-          .col-xs-2.col-xs-offset-1
-            .quadre2 
-              div Compromís
-          .col-xs-2
-            .quadre2
-              div Experiència
-          .col-xs-2
-            .quadre2 
-              div Qualitat
-          .col-xs-2
-            .quadre2 
-              div Innovació
-          .col-xs-2
-            .quadre2 
-              div Eficiència
-        .valorsPetit
-          .col-xs-12
-            ul.text-center
-              li Compromís
-              li Experiència
-              li Qualitat
-              li Eficiència
+    .footer
+      .row
+          h1.text-center Valors que ens fan grans
+          .valorsGran
+            .col-xs-2.col-xs-offset-1
+              .quadre2 
+                div Compromís
+            .col-xs-2
+              .quadre2
+                div Experiència
+            .col-xs-2
+              .quadre2 
+                div Qualitat
+            .col-xs-2
+              .quadre2 
+                div Innovació
+            .col-xs-2
+              .quadre2 
+                div Eficiència
+          .valorsPetit
+            .col-xs-12
+              ul.text-center
+                li Compromís
+                li Experiència
+                li Qualitat
+                li Eficiència
     
 block content
   .container#tecnologia
@@ -88,7 +88,8 @@ block content
       .col-xs-12.col-sm-8.col-sm-offset-2
         h1.text-center.big.message1 Tecnologia
         h2.text-center.enplaterColor.middle Sistemes d'impressió
-        
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
     .row
@@ -130,7 +131,9 @@ block content
         
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.
         p.enplaterText.text-center Estudiem cada cas de forma independent. Tenim en compte les característiques i els requisits de cada un dels seus productes. Assegurem la seva imatge, protecció i maquinabilitat.          
-
+    .row
+      #map1.col-sm-6
+      #map2.col-sm-6
   .separador
   
   .container#sobreNosaltres
