@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
     carouselDimension();
     $('.mainHeader').vegas({
@@ -9,8 +7,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             { src: 'img/foto-3.jpg' }
         ]
     });
-    	$('#nav-scroll').onePageNav({offset: 135,currentClass: 'active'});
-    	
+    $('#nav-scroll').onePageNav({offset: 15,currentClass: 'active'});
+    
+
+     var navMain = $("#navMain");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+
+ });
     
 });
 
@@ -30,14 +34,10 @@ function initMap() {
 function carouselDimension() {
     var fixe    = $('.fixe').height();
     var win     = $(window).height();
-    $('#inici').height(win - fixe + 50);
+    var heightInici = (win - fixe + 50) < 800 ? 800: (win - fixe + 50);
+    $('#inici').height(heightInici);
 }
 
-/*$(window).resize(function() {
-    
-    location.reload(false);
-    console.log('hola');
-})*/
 
 $(window).bind('resize', function(e)
 {
@@ -47,3 +47,37 @@ $(window).bind('resize', function(e)
     this.location.reload(false); /* false to get page from cache */
   }, 20);
 });
+
+
+(function() {
+    'use strict';
+    var docElem = document.documentElement,
+        header = document.querySelector( '.fixe' ),
+        didScroll = false,
+        changeHeaderOn = 300;
+ 
+    function init() {
+        window.addEventListener( 'scroll', function( event ) {
+            if( !didScroll ) {
+                didScroll = true;
+                scrollPage();
+            }
+        }, false );
+    }
+ 
+    function scrollPage() {
+        var sy = scrollY();
+        if ( sy >= changeHeaderOn ) {
+            header.className = 'fixePetit row'
+        }
+        else {
+            header.className = 'fixe row';
+        }
+        didScroll = false;
+    }
+ 
+    function scrollY() {
+        return window.pageYOffset || docElem.scrollTop;
+    }
+    init();
+})();

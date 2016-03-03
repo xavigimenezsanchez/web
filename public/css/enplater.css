@@ -2,8 +2,52 @@
 a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
 a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
 
+#menuPrincipal .navbar #nav-scroll a {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
 
-.fixe {
+#menuPrincipal > .navbar {
+    margin-top: 20px;
+}
+
+/*******************  Animations     ************************/
+
+/* Initially we don't want any height, and we want the contents to be hidden */
+	
+ #languages {
+     /*display:none;*/
+	
+	height: 100%;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: height 0.8s;
+	-moz-transition: height 0.8s;
+	
+	transition: height 0.8s;
+	transition: padding 0.8s;
+	transition: margin 0.8s;
+}
+#menuPrincipal {
+    transition: box-shadow 0.8s;
+}
+
+/*************************************************************/
+
+.paddingZero {
+    padding: 0;
+}
+.fixePetit #languages {
+    height:0;
+    padding: 0;
+    margin: 0;
+}
+
+.fixePetit #menuPrincipal {
+    box-shadow: 0 2px 5px 0 black;
+}
+.fixe, .fixePetit{
     position: fixed !important;
     top: 0;
     width: 100%;
@@ -11,6 +55,8 @@ a:focus, a:focus * { outline: none !important; -moz-outline-style: none !importa
     margin: 0 !important;
     background: white;
 }
+
+
 header {
     margin-top: 20px;
     background-color: white;
@@ -157,6 +203,9 @@ footer {
 
 
 @media only screen and (min-width: 1200px) {
+    #menuPrincipal {
+        letter-spacing: 2px;
+    }
     .quadre2 {
         border: 4px solid white;
         width: 150px;
@@ -210,17 +259,21 @@ footer {
     
     .message2:after {
         content: "Més de 50 anys d'experiència";
-        display: block;
-        border: 4px solid black;
+        border: 5px solid black;
         height: 150px;
         width: 150px;
-        font-size: 0.2em;
-        padding-top: 50px;
+        font-size: 0.3em;
+        padding-top: 29px;
+        padding-left: 1px;
+        padding-right: 1px;
         position: absolute;
-        right: -160px;
-        font-weight: 900;
-        border-radius: 10px 10px 10px 0;
-        top: 50px;
+        right: -194px;
+        /* font-weight: 900; */
+        border-radius: 20px 20px 20px 0;
+        top: 78px;
+        font-weight: bold;
+        font-family: "Bitter";
+        line-height: 1.4em;
     }
 
   
@@ -398,6 +451,9 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+    #languages {
+        margin-bottom: 0em;
+    }
      h2 {
         font-size: 1.8em;
     }
@@ -480,6 +536,9 @@ footer {
 
 
 @media   (max-width: 599px) {
+    #languages {
+        margin-bottom: 0em;
+    }
      h2 {
         font-size: 1.5em;
     }

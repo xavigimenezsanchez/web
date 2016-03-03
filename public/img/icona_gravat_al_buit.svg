@@ -10,12 +10,14 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
+
+
 <svg version="1.1" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="117px" height="147px"
 	 viewBox="0 0 117 147" enable-background="new 0 0 117 147" xml:space="preserve">
 
 	<g i:extraneous="self">
-		<rect fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="110" height="140" x="2" y="2" rx="20" ry="20"/>
+		<rect fill="white" stroke="#000000" stroke-width="0" stroke-miterlimit="10" width="140" height="140" x="2" y="2" rx="20" ry="20"/>
 		<g>
 			<path stroke="#000000" stroke-width="3.7531" stroke-miterlimit="10" d="M79.773,45.195c5.543,0,10.037,4.494,10.037,10.037
 				s-4.494,10.037-10.037,10.037l0.025-0.002H27.237c-5.549-0.005-10.047-4.503-10.047-10.052s4.592-10.047,10.141-10.047
@@ -34,13 +36,21 @@
 					l-29.058,0.019L42.533,53.355z"/>
 				
 					<polygon fill="none" stroke="#000000" stroke-width="3.2902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-					83.128,71.889 71.525,71.879 71.504,83.48 				"/>
+					83.128,71.889 71.525,71.879 71.504,83.48"/>
 			</g>
 		</g>
 		<text  fill="black">Gravat</text>
-		
-		<text x="30" y="103" font-weight="bold" fill="black">Gravat</text>
-		<text x="32" y="123" font-weight="bold" fill="black">al buit</text>
+
+		 
+		 <font>
+		  <font-face font-family="Super Sans">
+		    <font-face-src>
+		      <font-face-uri xlink:href="https://fonts.googleapis.com/css?family=Bitter" />
+		    </font-face-src>
+		  </font-face>
+		</font>
+		<text x="30" y="103"  font-family="Btter" font-weight="bold" fill="black">Gravat</text>
+		<text x="32" y="123"  font-family="Bitter" font-weight="bold" fill="black">al buit</text>
 	</g>
 
 

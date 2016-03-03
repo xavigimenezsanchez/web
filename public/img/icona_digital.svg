@@ -15,7 +15,7 @@
 	 viewBox="0 0 117 147" enable-background="new 0 0 117 147" xml:space="preserve">
 
 	<g i:extraneous="self">
-		<rect fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="110" height="140" x="2" y="2" rx="20" ry="20"/>
+		<rect fill="white" stroke="#000000" stroke-width="0" stroke-miterlimit="10" width="110" height="140" x="2" y="2" rx="20" ry="20"/>
 		<path stroke="#000000" stroke-width="3.7976" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 			M48.853,28.83h27.62c7.862,0.131,7.295,7.342,7.295,7.342v41.029H86.3v0.963L77.66,78.17l-0.005-0.969h2.481V47.464H48.853h0.058
 			H26.772l-0.006,29.737h2.512v0.963h-8.576L20.7,77.206h2.537l0.009-41.052c0,0-0.59-7.194,7.272-7.325h18.393"/>
@@ -32,8 +32,14 @@
 				<polygon fill="none" stroke="#000000" stroke-width="3.7976" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 				73.554,61.544 63.493,61.544 63.493,71.584 			"/>
 		</g>
-		<text x="20" y="103" font-weight="bold" fill="black">Impressió</text>
-		<text x="30" y="123" font-weight="bold" fill="black">digital</text>
+		  <style type="text/css">
+		    @font-face {
+		        font-family: Bitter;
+		        src: url(https://fonts.googleapis.com/css?family=Bitter);
+		    }
+		 </style>
+		<text x="20" y="103" font-family="Bitter" font-weight="bold" fill="black">Impressió</text>
+		<text x="30" y="123" font-family="Bitter" font-weight="bold" fill="black">digital</text>
 	</g>
 
 
