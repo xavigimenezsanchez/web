@@ -7,14 +7,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
             { src: 'img/foto-3.jpg' }
         ]
     });
-    $('#nav-scroll').onePageNav({offset: 15,currentClass: 'active'});
-    
+    $('#nav-scroll').onePageNav({offset: 25,currentClass: 'active'});
+    //$('#footerMenu').onePageNav({offset: 25,currentClass: 'active'});
 
      var navMain = $("#navMain");
      navMain.on("click", "a", null, function () {
          navMain.collapse('hide');
-
- });
+        });
+        
+    /********************************************
+     *              Footer Menu                 *
+     * ******************************************/
+     
+     $('#footerMenu a').click(function(e) {
+         e.preventDefault();
+         $('#menuPrincipal').find('a[href="'+ e.target.attributes.href.textContent +'"]').click();
+     })
     
 });
 
