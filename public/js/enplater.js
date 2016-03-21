@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     carouselDimension();
     $('.mainHeader').vegas({
         slides: [
-            { src: 'img/foto-6.jpg' },
-            { src: 'img/foto-4.jpg' },
-            { src: 'img/foto-3.jpg' }
+            { src: 'img/digital.jpg' },
+            { src: 'img/cerutti13.jpg' },
+            { src: 'img/cerutti16.jpg' }
         ]
     });
     $('#nav-scroll').onePageNav({offset: 25,currentClass: 'active'});
